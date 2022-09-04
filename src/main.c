@@ -81,7 +81,7 @@ void main_loop()
 
         show_infos(TA, TI, TE, control_output, reference_potentiometer);
 
-        usleep(700000);
+        usleep(500000);
     }
 }
 
