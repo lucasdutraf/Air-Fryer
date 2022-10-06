@@ -1,5 +1,6 @@
 #include "main.h"
 #include "ui.h"
+#include "visor.h"
 
 void finish();
 void main_loop();
@@ -17,7 +18,7 @@ int main(int argc, char *argv[])
     gpio_setup();
     bme280_setup();
     csv_setup();
-    init_uart();
+    start_uart();
 
     pthread_create(&tid[0], NULL, (void *)main_loop, (void *)NULL);
     pthread_create(&tid[1], NULL, (void *)dashboard, (void *)NULL);

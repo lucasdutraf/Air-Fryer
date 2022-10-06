@@ -3,6 +3,7 @@
 #include <signal.h>
 #include <pthread.h>
 #include <ncurses.h>
+#include <unistd.h>
 
 #include "uart.h"
 #include "menu_display.h"

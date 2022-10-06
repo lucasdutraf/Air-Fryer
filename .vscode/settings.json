@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "GPIO.H": "cpp"
+        "GPIO.H": "cpp",
+        "stdlib.h": "c",
+        "visor.h": "c"
     }
 }

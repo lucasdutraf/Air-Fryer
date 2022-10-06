@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <termios.h>
+#include <stdlib.h>
 #include "crc16.h"
 #include "uart.h"
 
@@ -37,11 +38,9 @@ void close_uart() {
 }
 
 
-float process_uart_return(int uart_filestream)
-{
+float process_uart_return(int uart_filestream) {
     float result = 0;
-    if (uart_filestream != -1)
-    {
+    if (uart_filestream != -1) {
         unsigned char rx_buffer[256];
         int rx_length = read(uart_filestream, (void *)rx_buffer, 255);
         if (rx_length < 0)
@@ -82,7 +81,8 @@ float process_uart_return(int uart_filestream)
             memcpy(&f, &rx_buffer[3], 4);
             return f;
         }
-    } else {
+    }
+    else {
         return -1;
     }
 }
