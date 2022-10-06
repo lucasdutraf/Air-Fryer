@@ -6,7 +6,6 @@
 #include <unistd.h>
 
 #include "uart.h"
-#include "menu_display.h"
 #include "bme280temperature.h"
 #include "pid.h"
 #include "gpio.h"

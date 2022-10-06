@@ -2,6 +2,7 @@
     "files.associations": {
         "GPIO.H": "cpp",
         "stdlib.h": "c",
-        "visor.h": "c"
+        "visor.h": "c",
+        "ui.h": "c"
     }
 }
